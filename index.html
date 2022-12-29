@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Лабораторная работа №3</title>
+</head>
+
+<script>
+function createObject(Name, Value) {
+return {
+[Name] : Name,
+[Value] : Value,
+print() {
+console.log(`${Name} : ${Value}`);
+}
+}
+}
+
+var foot = prompt("Введите количество объектов");
+
+for(var i = 1; i <= foot; i++){
+var a = prompt("Введите название свойства");
+var b = prompt("Введите значение свойства");
+
+var person = createObject(a, b);
+person.print();
+}
+</script>
+
+<body>
+</body>
+</html>
